@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 
 export default class indexPage extends Component {
+    componentDidMount(){
+        document.querySelector('body').classList = 'has-sidebar has-fixed-sidebar-and-header'
+    }
     render() {
         return (
             <div>
