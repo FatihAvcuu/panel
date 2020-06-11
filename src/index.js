@@ -5,12 +5,24 @@ import App from './App';
 import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+
+import Index from './pages/indexPage'
+import Login from './pages/login'
+import PostList from './pages/postList'
+
+const routing = (
+  <Router>
+    <div>
+      <Route exact path='/' component={Login} />
+      <Route path='/home' component={Index} />
+      <Route path='/postlist' component={PostList} />
+    </div>
+  </Router>
+)
 
 ReactDOM.render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-  document.getElementById('root')
+  routing,document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

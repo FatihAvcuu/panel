@@ -53,7 +53,7 @@ export default class indexPage extends Component {
                                                         <p className="mb-0">
                                                             Order <strong>#10000</strong> has been updated.
                                                 </p>
-                                                        <p className="list-group-item-closer text-muted" href="#"><i class="gd-close"></i></p>
+                                                        <p className="list-group-item-closer text-muted" href="#"><i className="gd-close"></i></p>
                                                     </div>
                                                     <div className="list-group-item list-group-item-action">
                                                         <div className="d-flex align-items-center text-nowrap mb-2">
@@ -64,7 +64,7 @@ export default class indexPage extends Component {
                                                         <p className="mb-0">
                                                             Order <strong>#10001</strong> has been updated.
                                                 </p>
-                                                        <p className="list-group-item-closer text-muted" href="#"><i class="gd-close"></i></p>
+                                                        <p className="list-group-item-closer text-muted" href="#"><i className="gd-close"></i></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -75,7 +75,7 @@ export default class indexPage extends Component {
                                     <p id="profileMenuInvoker" className="header-complex-invoker" href="#" aria-controls="profileMenu" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#profileMenu" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-animation-in="fadeIn" data-unfold-animation-out="fadeOut">
                                         <span className="mr-md-2 avatar-placeholder">J</span>
                                         <span className="d-none d-md-block">John Doe</span>
-                                        <i class="gd-angle-down d-none d-md-block ml-2"></i>
+                                        <i className="gd-angle-down d-none d-md-block ml-2"></i>
                                     </p>
 
                                     <ul id="profileMenu" className="unfold unfold-user unfold-light unfold-top unfold-centered position-absolute pt-2 pb-1 mt-4 unfold-css-animation unfold-hidden fadeOut" aria-labelledby="profileMenuInvoker"
@@ -222,7 +222,7 @@ export default class indexPage extends Component {
                                                 <div className="media-body">
                                                     <h4 className="h3 lh-1 mb-2">$25,312.24</h4>
                                                     <p className="small text-muted mb-0">
-                                                        +$5,213.38 <span class="text-success mx-1">+10.23%</span> This Month
+                                                        +$5,213.38 <span className="text-success mx-1">+10.23%</span> This Month
                                             </p>
                                                 </div>
                                             </div>
@@ -261,10 +261,10 @@ export default class indexPage extends Component {
                                                 data-fill-colors='["#8069f2"]'
                                                 data-stroke-dash-array-axis-y="4"
                                                 data-is-show-tooltips="true"
-                                                data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                                                data-tooltip-custom-className="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
                                                 data-tooltip-currency="In Stock "
                                                 data-is-show-points="true"
-                                                data-point-custom-class='chart__point--donut chart__point--border-xs border-primary rounded-circle'
+                                                data-point-custom-className='chart__point--donut chart__point--border-xs border-primary rounded-circle'
                                                 data-point-dimensions='{"width":15,"height":15}'></div>
                                         </div>
                                     </div>
@@ -279,7 +279,7 @@ export default class indexPage extends Component {
                                                 <div className="media-body">
                                                     <h4 className="h3 lh-1 mb-2">$6,926.32</h4>
                                                     <p className="small text-muted mb-0">
-                                                        +$570.5 <span class="text-success mx-1">+2.31%</span> This Month
+                                                        +$570.5 <span className="text-success mx-1">+2.31%</span> This Month
                                             </p>
                                                 </div>
                                             </div>
@@ -326,10 +326,10 @@ export default class indexPage extends Component {
                                    ]'
                                                 data-is-show-tooltips="true"
                                                 data-is-tooltips-append-to-body="true"
-                                                data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white p-2"
+                                                data-tooltip-custom-className="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white p-2"
                                                 data-tooltip-currency="Qty "
                                                 data-is-show-points="true"
-                                                data-point-custom-class='chart__point--donut chart__point--border-xxs border-primary rounded-circle'
+                                                data-point-custom-className='chart__point--donut chart__point--border-xxs border-primary rounded-circle'
                                                 data-point-dimensions='{"width":8,"height":8}'></div>
 
                                         </div>
@@ -371,7 +371,7 @@ export default class indexPage extends Component {
                                                     data-is-show-tooltips="true"
                                                     data-tooltip-currency="%"
                                                     data-is-tooltip-currency-reverse="true"
-                                                    data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle chart-tooltip--centered chart-tooltip--black small text-white text-nowrap px-2 py-1"></div>
+                                                    data-tooltip-custom-className="chart-tooltip chart-tooltip--none-triangle chart-tooltip--centered chart-tooltip--black small text-white text-nowrap px-2 py-1"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -464,14 +464,14 @@ export default class indexPage extends Component {
 
                                                     <div className="col-6 col-md-4 mb-3 mb-md-0 border-left">
                                                         <div className="h3 mb-0">
-                                                            <span className="text-success">+</span>$1,059<sup class="h5">.83</sup>
+                                                            <span className="text-success">+</span>$1,059<sup className="h5">.83</sup>
                                                         </div>
                                                         <small className="text-muted">Today Sales (USD)</small>
                                                     </div>
 
                                                     <div className="col-12 col-md-4 border-left">
                                                         <div className="h3 mb-0">
-                                                            <span className="text-success">+</span>5.32<sup class="h5">%</sup>
+                                                            <span className="text-success">+</span>5.32<sup className="h5">%</sup>
                                                         </div>
                                                         <small className="text-muted">Net Profit (%)</small>
                                                     </div>
@@ -535,10 +535,10 @@ export default class indexPage extends Component {
                                                     data-text-color-y="#868e96"
                                                     data-is-show-tooltips="true"
                                                     data-is-tooltip-divided="true"
-                                                    data-tooltip-custom-class="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
+                                                    data-tooltip-custom-className="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
                                                     data-tooltip-currency="USD "
                                                     data-is-show-points="true"
-                                                    data-point-custom-class='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
+                                                    data-point-custom-className='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
                                                     data-point-dimensions='{"width":8,"height":8}'></div>
                                             </div>
 
@@ -624,10 +624,10 @@ export default class indexPage extends Component {
                                                     data-text-color-y="#868e96"
                                                     data-is-show-tooltips="true"
                                                     data-is-tooltip-divided="true"
-                                                    data-tooltip-custom-class="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
+                                                    data-tooltip-custom-className="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
                                                     data-tooltip-currency="USD "
                                                     data-is-show-points="true"
-                                                    data-point-custom-class='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
+                                                    data-point-custom-className='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
                                                     data-point-dimensions='{"width":8,"height":8}'></div>
                                             </div>
 
@@ -713,10 +713,10 @@ export default class indexPage extends Component {
                                                     data-text-color-y="#868e96"
                                                     data-is-show-tooltips="true"
                                                     data-is-tooltip-divided="true"
-                                                    data-tooltip-custom-class="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
+                                                    data-tooltip-custom-className="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
                                                     data-tooltip-currency="USD "
                                                     data-is-show-points="true"
-                                                    data-point-custom-class='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
+                                                    data-point-custom-className='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
                                                     data-point-dimensions='{"width":8,"height":8}'></div>
                                             </div>
 
@@ -802,10 +802,10 @@ export default class indexPage extends Component {
                                                     data-text-color-y="#868e96"
                                                     data-is-show-tooltips="true"
                                                     data-is-tooltip-divided="true"
-                                                    data-tooltip-custom-class="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
+                                                    data-tooltip-custom-className="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
                                                     data-tooltip-currency="USD "
                                                     data-is-show-points="true"
-                                                    data-point-custom-class='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
+                                                    data-point-custom-className='chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle'
                                                     data-point-dimensions='{"width":8,"height":8}'></div>
                                             </div>
                                         </div>
@@ -841,7 +841,7 @@ export default class indexPage extends Component {
                                                     data-is-stroke-rounded="true"
                                                     data-is-show-tooltips="true"
                                                     data-postfix="%"
-                                                    data-tooltip-custom-class="chart-tooltip chart-tooltip--black small text-white px-2 py-1"></div>
+                                                    data-tooltip-custom-className="chart-tooltip chart-tooltip--black small text-white px-2 py-1"></div>
                                             </div>
 
                                             <div className="border-bottom media align-items-center p-3">
@@ -880,7 +880,7 @@ export default class indexPage extends Component {
                                                     data-is-show-tooltips="true"
                                                     data-tooltip-currency="%"
                                                     data-is-tooltip-currency-reverse="true"
-                                                    data-tooltip-custom-class="chart-tooltip chart-tooltip--triangle-right chart-tooltip--black small text-white px-2 py-1 mt-5 ml-n5"></div>
+                                                    data-tooltip-custom-className="chart-tooltip chart-tooltip--triangle-right chart-tooltip--black small text-white px-2 py-1 mt-5 ml-n5"></div>
 
                                                 <div className="small text-muted">Total Balance ≈ 32,754.56 USD</div>
                                             </div>
@@ -1008,10 +1008,10 @@ export default class indexPage extends Component {
                                  ]'
                                             data-is-show-tooltips="true"
                                             data-is-tooltips-append-to-body="true"
-                                            data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
-                                            data-tooltip-badge-markup='<span class="indicator indicator-sm bg-secondary rounded-circle mr-1"></span>'
+                                            data-tooltip-custom-className="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
+                                            data-tooltip-badge-markup='<span className="indicator indicator-sm bg-secondary rounded-circle mr-1"></span>'
                                             data-is-show-points="true"
-                                            data-point-custom-class='chart__point--hidden'
+                                            data-point-custom-className='chart__point--hidden'
                                             data-point-dimensions='{"width":8,"height":8}'></div>
                                     </div>
                                 </div>
@@ -1061,10 +1061,10 @@ export default class indexPage extends Component {
                                  ]'
                                             data-is-show-tooltips="true"
                                             data-is-tooltips-append-to-body="true"
-                                            data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
-                                            data-tooltip-badge-markup='<span class="indicator indicator-sm bg-primary rounded-circle mr-1"></span>'
+                                            data-tooltip-custom-className="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
+                                            data-tooltip-badge-markup='<span className="indicator indicator-sm bg-primary rounded-circle mr-1"></span>'
                                             data-is-show-points="true"
-                                            data-point-custom-class='chart__point--hidden'
+                                            data-point-custom-className='chart__point--hidden'
                                             data-point-dimensions='{"width":8,"height":8}'></div>
                                     </div>
                                 </div>
@@ -1107,10 +1107,10 @@ export default class indexPage extends Component {
                                             data-line-colors='["#8069f2"]'
                                             data-is-show-tooltips="true"
                                             data-is-tooltips-append-to-body="true"
-                                            data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
-                                            data-tooltip-badge-markup='<span class="indicator indicator-sm bg-primary rounded-circle mr-1"></span>'
+                                            data-tooltip-custom-className="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
+                                            data-tooltip-badge-markup='<span className="indicator indicator-sm bg-primary rounded-circle mr-1"></span>'
                                             data-is-show-points="true"
-                                            data-point-custom-class='chart__point--hidden'
+                                            data-point-custom-className='chart__point--hidden'
                                             data-point-dimensions='{"width":8,"height":8}'></div>
                                     </div>
                                 </div>
