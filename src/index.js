@@ -6,19 +6,21 @@ import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {UserProvider} from './context';
+import PrivateRoute from './PrivateRoute';
 
 import Index from './pages/indexPage'
 import Login from './pages/login'
-import PostList from './pages/postList'
 
 const routing = (
+  <UserProvider>
   <Router>
     <div>
-      <Route exact path='/' component={Login} />
-      <Route path='/home' component={Index} />
-      <Route path='/postlist' component={PostList} />
+      <Route exact path='/login' component={Login} />
+      <PrivateRoute path='/home' component={Index} />
     </div>
   </Router>
+  </UserProvider>
 )
 
 ReactDOM.render(
