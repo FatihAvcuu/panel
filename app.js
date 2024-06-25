@@ -16,7 +16,7 @@ app.post('/api/login', function (req, res) {
         let users = JSON.parse(data);
         await users.user.map(user => {
             if (email === user.email && pw === user.pw) {
-                console.log(`${user.name} sektöre giriş yaptı!`)
+                console.log(`${user.name} giriş yaptı!`)
                 access = true;
                 res.send(user)
             }
